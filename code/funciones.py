@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 
 def leer_datos(path):
     """
@@ -15,6 +16,5 @@ def filtrar_calcular_media(df,alumno:str):
     La funcion filtra el tag de acuerdo al alumna y calcula la media de la columna valor
     """
     df=df.loc[df['Tag'].str.startswith("Examen_"+alumno)]
-    media=df['Value'].mean()
+    media=round(df['Value'].mean(),2)
     return media
-
