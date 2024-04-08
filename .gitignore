@@ -1,0 +1,14 @@
+data/
+*.pyc
+__pycache__/
+examen-evaluacion-env/
+*.pyc
+*.pyo
+
+#archivos cache
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+*.ipynb
+*.csv
